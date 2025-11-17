@@ -1,0 +1,32 @@
+[2025-11-17T03:53:12.390+0000] {processor.py:157} INFO - Started process (PID=19423) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:53:12.390+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2025-11-17T03:53:12.391+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:53:12.390+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:53:12.396+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_weekday_branch_operator']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:53:12.479+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:53:12.479+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_weekday_branch_operator
+[2025-11-17T03:53:12.489+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:53:12.489+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_weekday_branch_operator
+[2025-11-17T03:53:12.496+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:53:12.496+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:example_weekday_branch_operator
+[2025-11-17T03:53:12.504+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:53:12.504+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-11-17T03:53:12.510+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:53:12.510+0000] {dag.py:2763} INFO - Creating ORM DAG for example_weekday_branch_operator
+[2025-11-17T03:53:12.518+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:53:12.518+0000] {dag.py:3504} INFO - Setting next_dagrun for example_weekday_branch_operator to 2025-11-16T00:00:00+00:00, run_after=2025-11-17T00:00:00+00:00
+[2025-11-17T03:53:12.536+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 0.148 seconds
+[2025-11-17T03:54:01.141+0000] {processor.py:157} INFO - Started process (PID=19742) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:54:01.142+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2025-11-17T03:54:01.142+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:54:01.142+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:54:01.147+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_weekday_branch_operator']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:54:01.159+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:54:01.159+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-11-17T03:54:01.173+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:54:01.173+0000] {dag.py:3504} INFO - Setting next_dagrun for example_weekday_branch_operator to 2025-11-16T00:00:00+00:00, run_after=2025-11-17T00:00:00+00:00
+[2025-11-17T03:54:01.186+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 0.047 seconds
+[2025-11-17T03:54:44.976+0000] {processor.py:157} INFO - Started process (PID=20040) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:54:44.977+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2025-11-17T03:54:44.977+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:54:44.977+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:54:44.985+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_weekday_branch_operator']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:54:45.002+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:54:45.002+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-11-17T03:54:45.024+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:54:45.024+0000] {dag.py:3504} INFO - Setting next_dagrun for example_weekday_branch_operator to 2025-11-16T00:00:00+00:00, run_after=2025-11-17T00:00:00+00:00
+[2025-11-17T03:54:45.042+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 0.068 seconds
+[2025-11-17T03:55:32.806+0000] {processor.py:157} INFO - Started process (PID=20497) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:55:32.807+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py for tasks to queue
+[2025-11-17T03:55:32.807+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:55:32.807+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:55:32.822+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_weekday_branch_operator']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py
+[2025-11-17T03:55:32.845+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:55:32.844+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-11-17T03:55:32.867+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:55:32.867+0000] {dag.py:3504} INFO - Setting next_dagrun for example_weekday_branch_operator to 2025-11-16T00:00:00+00:00, run_after=2025-11-17T00:00:00+00:00
+[2025-11-17T03:55:32.881+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_branch_day_of_week_operator.py took 0.078 seconds

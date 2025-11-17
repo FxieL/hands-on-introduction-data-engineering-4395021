@@ -1,0 +1,32 @@
+[2025-11-17T03:52:59.048+0000] {processor.py:157} INFO - Started process (PID=19330) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:52:59.048+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-11-17T03:52:59.049+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:52:59.049+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:52:59.070+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_params_ui_tutorial']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:52:59.150+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:52:59.150+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:example_params_ui_tutorial
+[2025-11-17T03:52:59.158+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:52:59.158+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:example_params_ui_tutorial
+[2025-11-17T03:52:59.164+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:52:59.164+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:example_params_ui_tutorial
+[2025-11-17T03:52:59.171+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:52:59.171+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-11-17T03:52:59.177+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:52:59.177+0000] {dag.py:2763} INFO - Creating ORM DAG for example_params_ui_tutorial
+[2025-11-17T03:52:59.183+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:52:59.183+0000] {dag.py:3504} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-11-17T03:52:59.197+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.151 seconds
+[2025-11-17T03:53:44.494+0000] {processor.py:157} INFO - Started process (PID=19637) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:53:44.494+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-11-17T03:53:44.495+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:53:44.494+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:53:44.514+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_params_ui_tutorial']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:53:44.537+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:53:44.537+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-11-17T03:53:44.549+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:53:44.549+0000] {dag.py:3504} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-11-17T03:53:44.563+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.071 seconds
+[2025-11-17T03:54:30.698+0000] {processor.py:157} INFO - Started process (PID=19939) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:54:30.699+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-11-17T03:54:30.700+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:54:30.699+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:54:30.718+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_params_ui_tutorial']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:54:30.740+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:54:30.740+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-11-17T03:54:30.752+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:54:30.752+0000] {dag.py:3504} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-11-17T03:54:30.765+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.069 seconds
+[2025-11-17T03:55:16.872+0000] {processor.py:157} INFO - Started process (PID=20337) to work on /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:55:16.873+0000] {processor.py:826} INFO - Processing file /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py for tasks to queue
+[2025-11-17T03:55:16.873+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:55:16.873+0000] {dagbag.py:541} INFO - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:55:16.893+0000] {processor.py:836} INFO - DAG(s) dict_keys(['example_params_ui_tutorial']) retrieved from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py
+[2025-11-17T03:55:16.916+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:55:16.916+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2025-11-17T03:55:16.928+0000] {logging_mixin.py:150} INFO - [2025-11-17T03:55:16.928+0000] {dag.py:3504} INFO - Setting next_dagrun for example_params_ui_tutorial to None, run_after=None
+[2025-11-17T03:55:16.941+0000] {processor.py:179} INFO - Processing /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_params_ui_tutorial.py took 0.071 seconds
