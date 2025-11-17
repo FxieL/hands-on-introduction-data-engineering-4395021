@@ -1,0 +1,13 @@
+[2025-11-17T04:17:05.882+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: tutorial_dag.transform manual__2025-11-17T04:17:00.934310+00:00 [queued]>
+[2025-11-17T04:17:05.886+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: tutorial_dag.transform manual__2025-11-17T04:17:00.934310+00:00 [queued]>
+[2025-11-17T04:17:05.886+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 3
+[2025-11-17T04:17:05.897+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): transform> on 2025-11-17 04:17:00.934310+00:00
+[2025-11-17T04:17:05.900+0000] {standard_task_runner.py:57} INFO - Started process 29977 to run task
+[2025-11-17T04:17:05.902+0000] {standard_task_runner.py:84} INFO - Running: ['airflow', 'tasks', 'run', 'tutorial_dag', 'transform', 'manual__2025-11-17T04:17:00.934310+00:00', '--job-id', '6', '--raw', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py', '--cfg-path', '/tmp/tmpmqthzn3_']
+[2025-11-17T04:17:05.903+0000] {standard_task_runner.py:85} INFO - Job 6: Subtask transform
+[2025-11-17T04:17:05.926+0000] {task_command.py:410} INFO - Running <TaskInstance: tutorial_dag.transform manual__2025-11-17T04:17:00.934310+00:00 [running]> on host codespaces-98edc8
+[2025-11-17T04:17:05.965+0000] {taskinstance.py:1545} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='tutorial_dag' AIRFLOW_CTX_TASK_ID='transform' AIRFLOW_CTX_EXECUTION_DATE='2025-11-17T04:17:00.934310+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-17T04:17:00.934310+00:00'
+[2025-11-17T04:17:05.975+0000] {python.py:183} INFO - Done. Returned value was: None
+[2025-11-17T04:17:05.978+0000] {taskinstance.py:1345} INFO - Marking task as SUCCESS. dag_id=tutorial_dag, task_id=transform, execution_date=20251117T041700, start_date=20251117T041705, end_date=20251117T041705
+[2025-11-17T04:17:05.996+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2025-11-17T04:17:06.007+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check

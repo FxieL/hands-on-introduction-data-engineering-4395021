@@ -4,3 +4,221 @@
 [[34m2025-11-17T03:52:31.043+0000[0m] {[34mscheduler_job_runner.py:[0m1553} INFO[0m - Resetting orphaned tasks for active dag runs[0m
 [[34m2025-11-17T03:52:31.044+0000[0m] {[34msettings.py:[0m60} INFO[0m - Configured default timezone Timezone('UTC')[0m
 [2025-11-17T03:52:31.064+0000] {manager.py:411} WARNING - Because we cannot use more than 1 thread (parsing_processes = 2) when using sqlite. So we set parallelism to 1.
+[[34m2025-11-17T03:57:31.233+0000[0m] {[34mscheduler_job_runner.py:[0m1553} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-11-17T04:02:31.326+0000[0m] {[34mscheduler_job_runner.py:[0m1553} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-11-17T04:07:31.482+0000[0m] {[34mscheduler_job_runner.py:[0m1553} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-11-17T04:12:31.737+0000[0m] {[34mscheduler_job_runner.py:[0m1553} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-11-17T04:13:31.813+0000[0m] {[34mscheduler_job_runner.py:[0m411} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: tutorial_dag.extract manual__2025-11-17T04:13:30.265797+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:13:31.813+0000[0m] {[34mscheduler_job_runner.py:[0m476} INFO[0m - DAG tutorial_dag has 0/16 running and queued tasks[0m
+[[34m2025-11-17T04:13:31.813+0000[0m] {[34mscheduler_job_runner.py:[0m587} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: tutorial_dag.extract manual__2025-11-17T04:13:30.265797+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:13:31.815+0000[0m] {[34mscheduler_job_runner.py:[0m625} INFO[0m - Sending TaskInstanceKey(dag_id='tutorial_dag', task_id='extract', run_id='manual__2025-11-17T04:13:30.265797+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default[0m
+[[34m2025-11-17T04:13:31.815+0000[0m] {[34mbase_executor.py:[0m147} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial_dag', 'extract', 'manual__2025-11-17T04:13:30.265797+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:13:31.818+0000[0m] {[34msequential_executor.py:[0m74} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'tutorial_dag', 'extract', 'manual__2025-11-17T04:13:30.265797+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:13:32.582+0000[0m] {[34mdagbag.py:[0m541} INFO[0m - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py[0m
+[[34m2025-11-17T04:13:32.664+0000[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:13:32.689+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-11-17T04:13:32.690+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:13:33.238+0000[0m] {[34mworkday.py:[0m36} WARNING[0m - Could not import pandas. Holidays will not be considered.[0m
+[[34m2025-11-17T04:13:33.255+0000[0m] {[34mtask_command.py:[0m410} INFO[0m - Running <TaskInstance: tutorial_dag.extract manual__2025-11-17T04:13:30.265797+00:00 [queued]> on host codespaces-98edc8[0m
+[[34m2025-11-17T04:13:33.611+0000[0m] {[34mscheduler_job_runner.py:[0m677} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial_dag', task_id='extract', run_id='manual__2025-11-17T04:13:30.265797+00:00', try_number=1, map_index=-1)[0m
+[[34m2025-11-17T04:13:33.616+0000[0m] {[34mscheduler_job_runner.py:[0m713} INFO[0m - TaskInstance Finished: dag_id=tutorial_dag, task_id=extract, run_id=manual__2025-11-17T04:13:30.265797+00:00, map_index=-1, run_start_date=2025-11-17 04:13:33.286042+00:00, run_end_date=2025-11-17 04:13:33.368912+00:00, run_duration=0.08287, state=success, executor_state=success, try_number=1, max_tries=2, job_id=2, pool=default_pool, queue=default, priority_weight=3, operator=PythonOperator, queued_dttm=2025-11-17 04:13:31.814025+00:00, queued_by_job_id=1, pid=28283[0m
+[[34m2025-11-17T04:13:33.754+0000[0m] {[34mscheduler_job_runner.py:[0m411} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: tutorial_dag.transform manual__2025-11-17T04:13:30.265797+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:13:33.754+0000[0m] {[34mscheduler_job_runner.py:[0m476} INFO[0m - DAG tutorial_dag has 0/16 running and queued tasks[0m
+[[34m2025-11-17T04:13:33.755+0000[0m] {[34mscheduler_job_runner.py:[0m587} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: tutorial_dag.transform manual__2025-11-17T04:13:30.265797+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:13:33.756+0000[0m] {[34mscheduler_job_runner.py:[0m625} INFO[0m - Sending TaskInstanceKey(dag_id='tutorial_dag', task_id='transform', run_id='manual__2025-11-17T04:13:30.265797+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default[0m
+[[34m2025-11-17T04:13:33.756+0000[0m] {[34mbase_executor.py:[0m147} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial_dag', 'transform', 'manual__2025-11-17T04:13:30.265797+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:13:33.759+0000[0m] {[34msequential_executor.py:[0m74} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'tutorial_dag', 'transform', 'manual__2025-11-17T04:13:30.265797+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:13:34.437+0000[0m] {[34mdagbag.py:[0m541} INFO[0m - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py[0m
+[[34m2025-11-17T04:13:34.523+0000[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:13:34.540+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-11-17T04:13:34.540+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:13:35.000+0000[0m] {[34mworkday.py:[0m36} WARNING[0m - Could not import pandas. Holidays will not be considered.[0m
+[[34m2025-11-17T04:13:35.017+0000[0m] {[34mtask_command.py:[0m410} INFO[0m - Running <TaskInstance: tutorial_dag.transform manual__2025-11-17T04:13:30.265797+00:00 [queued]> on host codespaces-98edc8[0m
+[[34m2025-11-17T04:13:35.394+0000[0m] {[34mscheduler_job_runner.py:[0m677} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial_dag', task_id='transform', run_id='manual__2025-11-17T04:13:30.265797+00:00', try_number=1, map_index=-1)[0m
+[[34m2025-11-17T04:13:35.398+0000[0m] {[34mscheduler_job_runner.py:[0m713} INFO[0m - TaskInstance Finished: dag_id=tutorial_dag, task_id=transform, run_id=manual__2025-11-17T04:13:30.265797+00:00, map_index=-1, run_start_date=2025-11-17 04:13:35.046973+00:00, run_end_date=2025-11-17 04:13:35.133469+00:00, run_duration=0.086496, state=success, executor_state=success, try_number=1, max_tries=2, job_id=3, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-11-17 04:13:33.755458+00:00, queued_by_job_id=1, pid=28294[0m
+[[34m2025-11-17T04:13:35.551+0000[0m] {[34mscheduler_job_runner.py:[0m411} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: tutorial_dag.load manual__2025-11-17T04:13:30.265797+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:13:35.551+0000[0m] {[34mscheduler_job_runner.py:[0m476} INFO[0m - DAG tutorial_dag has 0/16 running and queued tasks[0m
+[[34m2025-11-17T04:13:35.551+0000[0m] {[34mscheduler_job_runner.py:[0m587} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: tutorial_dag.load manual__2025-11-17T04:13:30.265797+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:13:35.552+0000[0m] {[34mscheduler_job_runner.py:[0m625} INFO[0m - Sending TaskInstanceKey(dag_id='tutorial_dag', task_id='load', run_id='manual__2025-11-17T04:13:30.265797+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-11-17T04:13:35.552+0000[0m] {[34mbase_executor.py:[0m147} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial_dag', 'load', 'manual__2025-11-17T04:13:30.265797+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:13:35.555+0000[0m] {[34msequential_executor.py:[0m74} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'tutorial_dag', 'load', 'manual__2025-11-17T04:13:30.265797+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:13:36.239+0000[0m] {[34mdagbag.py:[0m541} INFO[0m - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py[0m
+[[34m2025-11-17T04:13:36.354+0000[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:13:36.373+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-11-17T04:13:36.373+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:13:36.883+0000[0m] {[34mworkday.py:[0m36} WARNING[0m - Could not import pandas. Holidays will not be considered.[0m
+[[34m2025-11-17T04:13:36.901+0000[0m] {[34mtask_command.py:[0m410} INFO[0m - Running <TaskInstance: tutorial_dag.load manual__2025-11-17T04:13:30.265797+00:00 [queued]> on host codespaces-98edc8[0m
+[[34m2025-11-17T04:13:37.273+0000[0m] {[34mscheduler_job_runner.py:[0m677} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial_dag', task_id='load', run_id='manual__2025-11-17T04:13:30.265797+00:00', try_number=1, map_index=-1)[0m
+[[34m2025-11-17T04:13:37.276+0000[0m] {[34mscheduler_job_runner.py:[0m713} INFO[0m - TaskInstance Finished: dag_id=tutorial_dag, task_id=load, run_id=manual__2025-11-17T04:13:30.265797+00:00, map_index=-1, run_start_date=2025-11-17 04:13:36.929781+00:00, run_end_date=2025-11-17 04:13:37.009258+00:00, run_duration=0.079477, state=success, executor_state=success, try_number=1, max_tries=2, job_id=4, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-11-17 04:13:35.551829+00:00, queued_by_job_id=1, pid=28305[0m
+[[34m2025-11-17T04:13:37.408+0000[0m] {[34mdagrun.py:[0m630} INFO[0m - Marking run <DagRun tutorial_dag @ 2025-11-17 04:13:30.265797+00:00: manual__2025-11-17T04:13:30.265797+00:00, state:running, queued_at: 2025-11-17 04:13:30.290756+00:00. externally triggered: True> successful[0m
+[[34m2025-11-17T04:13:37.409+0000[0m] {[34mdagrun.py:[0m681} INFO[0m - DagRun Finished: dag_id=tutorial_dag, execution_date=2025-11-17 04:13:30.265797+00:00, run_id=manual__2025-11-17T04:13:30.265797+00:00, run_start_date=2025-11-17 04:13:31.786653+00:00, run_end_date=2025-11-17 04:13:37.409059+00:00, run_duration=5.622406, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-11-17 04:13:30.265797+00:00, data_interval_end=2025-11-17 04:13:30.265797+00:00, dag_hash=9221d8271226e6d5f69a55150d57e42c[0m
+[[34m2025-11-17T04:17:01.955+0000[0m] {[34mscheduler_job_runner.py:[0m411} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: tutorial_dag.extract manual__2025-11-17T04:17:00.934310+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:17:01.955+0000[0m] {[34mscheduler_job_runner.py:[0m476} INFO[0m - DAG tutorial_dag has 0/16 running and queued tasks[0m
+[[34m2025-11-17T04:17:01.955+0000[0m] {[34mscheduler_job_runner.py:[0m587} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: tutorial_dag.extract manual__2025-11-17T04:17:00.934310+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:17:01.957+0000[0m] {[34mscheduler_job_runner.py:[0m625} INFO[0m - Sending TaskInstanceKey(dag_id='tutorial_dag', task_id='extract', run_id='manual__2025-11-17T04:17:00.934310+00:00', try_number=1, map_index=-1) to executor with priority 3 and queue default[0m
+[[34m2025-11-17T04:17:01.957+0000[0m] {[34mbase_executor.py:[0m147} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial_dag', 'extract', 'manual__2025-11-17T04:17:00.934310+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:17:01.960+0000[0m] {[34msequential_executor.py:[0m74} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'tutorial_dag', 'extract', 'manual__2025-11-17T04:17:00.934310+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:17:03.207+0000[0m] {[34mdagbag.py:[0m541} INFO[0m - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py[0m
+[[34m2025-11-17T04:17:03.291+0000[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:17:03.312+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-11-17T04:17:03.312+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:17:03.781+0000[0m] {[34mworkday.py:[0m36} WARNING[0m - Could not import pandas. Holidays will not be considered.[0m
+[[34m2025-11-17T04:17:03.800+0000[0m] {[34mtask_command.py:[0m410} INFO[0m - Running <TaskInstance: tutorial_dag.extract manual__2025-11-17T04:17:00.934310+00:00 [queued]> on host codespaces-98edc8[0m
+[[34m2025-11-17T04:17:04.196+0000[0m] {[34mscheduler_job_runner.py:[0m677} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial_dag', task_id='extract', run_id='manual__2025-11-17T04:17:00.934310+00:00', try_number=1, map_index=-1)[0m
+[[34m2025-11-17T04:17:04.199+0000[0m] {[34mscheduler_job_runner.py:[0m713} INFO[0m - TaskInstance Finished: dag_id=tutorial_dag, task_id=extract, run_id=manual__2025-11-17T04:17:00.934310+00:00, map_index=-1, run_start_date=2025-11-17 04:17:03.834915+00:00, run_end_date=2025-11-17 04:17:03.921958+00:00, run_duration=0.087043, state=success, executor_state=success, try_number=1, max_tries=2, job_id=5, pool=default_pool, queue=default, priority_weight=3, operator=PythonOperator, queued_dttm=2025-11-17 04:17:01.956314+00:00, queued_by_job_id=1, pid=29960[0m
+[[34m2025-11-17T04:17:04.343+0000[0m] {[34mscheduler_job_runner.py:[0m411} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: tutorial_dag.transform manual__2025-11-17T04:17:00.934310+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:17:04.344+0000[0m] {[34mscheduler_job_runner.py:[0m476} INFO[0m - DAG tutorial_dag has 0/16 running and queued tasks[0m
+[[34m2025-11-17T04:17:04.344+0000[0m] {[34mscheduler_job_runner.py:[0m587} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: tutorial_dag.transform manual__2025-11-17T04:17:00.934310+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:17:04.345+0000[0m] {[34mscheduler_job_runner.py:[0m625} INFO[0m - Sending TaskInstanceKey(dag_id='tutorial_dag', task_id='transform', run_id='manual__2025-11-17T04:17:00.934310+00:00', try_number=1, map_index=-1) to executor with priority 2 and queue default[0m
+[[34m2025-11-17T04:17:04.345+0000[0m] {[34mbase_executor.py:[0m147} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial_dag', 'transform', 'manual__2025-11-17T04:17:00.934310+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:17:04.349+0000[0m] {[34msequential_executor.py:[0m74} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'tutorial_dag', 'transform', 'manual__2025-11-17T04:17:00.934310+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:17:05.154+0000[0m] {[34mdagbag.py:[0m541} INFO[0m - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py[0m
+[[34m2025-11-17T04:17:05.250+0000[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:17:05.268+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-11-17T04:17:05.269+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:17:05.826+0000[0m] {[34mworkday.py:[0m36} WARNING[0m - Could not import pandas. Holidays will not be considered.[0m
+[[34m2025-11-17T04:17:05.846+0000[0m] {[34mtask_command.py:[0m410} INFO[0m - Running <TaskInstance: tutorial_dag.transform manual__2025-11-17T04:17:00.934310+00:00 [queued]> on host codespaces-98edc8[0m
+[[34m2025-11-17T04:17:06.215+0000[0m] {[34mscheduler_job_runner.py:[0m677} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial_dag', task_id='transform', run_id='manual__2025-11-17T04:17:00.934310+00:00', try_number=1, map_index=-1)[0m
+[[34m2025-11-17T04:17:06.219+0000[0m] {[34mscheduler_job_runner.py:[0m713} INFO[0m - TaskInstance Finished: dag_id=tutorial_dag, task_id=transform, run_id=manual__2025-11-17T04:17:00.934310+00:00, map_index=-1, run_start_date=2025-11-17 04:17:05.882503+00:00, run_end_date=2025-11-17 04:17:05.978537+00:00, run_duration=0.096034, state=success, executor_state=success, try_number=1, max_tries=2, job_id=6, pool=default_pool, queue=default, priority_weight=2, operator=PythonOperator, queued_dttm=2025-11-17 04:17:04.344739+00:00, queued_by_job_id=1, pid=29977[0m
+[[34m2025-11-17T04:17:06.464+0000[0m] {[34mscheduler_job_runner.py:[0m411} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: tutorial_dag.load manual__2025-11-17T04:17:00.934310+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:17:06.464+0000[0m] {[34mscheduler_job_runner.py:[0m476} INFO[0m - DAG tutorial_dag has 0/16 running and queued tasks[0m
+[[34m2025-11-17T04:17:06.465+0000[0m] {[34mscheduler_job_runner.py:[0m587} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: tutorial_dag.load manual__2025-11-17T04:17:00.934310+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:17:06.466+0000[0m] {[34mscheduler_job_runner.py:[0m625} INFO[0m - Sending TaskInstanceKey(dag_id='tutorial_dag', task_id='load', run_id='manual__2025-11-17T04:17:00.934310+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-11-17T04:17:06.466+0000[0m] {[34mbase_executor.py:[0m147} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'tutorial_dag', 'load', 'manual__2025-11-17T04:17:00.934310+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:17:06.470+0000[0m] {[34msequential_executor.py:[0m74} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'tutorial_dag', 'load', 'manual__2025-11-17T04:17:00.934310+00:00', '--local', '--subdir', '/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py'][0m
+[[34m2025-11-17T04:17:07.177+0000[0m] {[34mdagbag.py:[0m541} INFO[0m - Filling up the DagBag from /home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/tutorial_dag.py[0m
+[[34m2025-11-17T04:17:07.284+0000[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:17:07.302+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-11-17T04:17:07.303+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:17:07.772+0000[0m] {[34mworkday.py:[0m36} WARNING[0m - Could not import pandas. Holidays will not be considered.[0m
+[[34m2025-11-17T04:17:07.793+0000[0m] {[34mtask_command.py:[0m410} INFO[0m - Running <TaskInstance: tutorial_dag.load manual__2025-11-17T04:17:00.934310+00:00 [queued]> on host codespaces-98edc8[0m
+[[34m2025-11-17T04:17:08.243+0000[0m] {[34mscheduler_job_runner.py:[0m677} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='tutorial_dag', task_id='load', run_id='manual__2025-11-17T04:17:00.934310+00:00', try_number=1, map_index=-1)[0m
+[[34m2025-11-17T04:17:08.246+0000[0m] {[34mscheduler_job_runner.py:[0m713} INFO[0m - TaskInstance Finished: dag_id=tutorial_dag, task_id=load, run_id=manual__2025-11-17T04:17:00.934310+00:00, map_index=-1, run_start_date=2025-11-17 04:17:07.829957+00:00, run_end_date=2025-11-17 04:17:07.931344+00:00, run_duration=0.101387, state=success, executor_state=success, try_number=1, max_tries=2, job_id=7, pool=default_pool, queue=default, priority_weight=1, operator=PythonOperator, queued_dttm=2025-11-17 04:17:06.465528+00:00, queued_by_job_id=1, pid=29988[0m
+[[34m2025-11-17T04:17:08.377+0000[0m] {[34mdagrun.py:[0m630} INFO[0m - Marking run <DagRun tutorial_dag @ 2025-11-17 04:17:00.934310+00:00: manual__2025-11-17T04:17:00.934310+00:00, state:running, queued_at: 2025-11-17 04:17:00.947748+00:00. externally triggered: True> successful[0m
+[[34m2025-11-17T04:17:08.378+0000[0m] {[34mdagrun.py:[0m681} INFO[0m - DagRun Finished: dag_id=tutorial_dag, execution_date=2025-11-17 04:17:00.934310+00:00, run_id=manual__2025-11-17T04:17:00.934310+00:00, run_start_date=2025-11-17 04:17:01.925078+00:00, run_end_date=2025-11-17 04:17:08.378281+00:00, run_duration=6.453203, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-11-17 04:17:00.934310+00:00, data_interval_end=2025-11-17 04:17:00.934310+00:00, dag_hash=9221d8271226e6d5f69a55150d57e42c[0m
+[[34m2025-11-17T04:17:31.905+0000[0m] {[34mscheduler_job_runner.py:[0m1553} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-11-17T04:18:27.981+0000[0m] {[34mscheduler_job_runner.py:[0m411} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: one_task_dag.one_task manual__2025-11-17T04:18:26.367964+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:18:27.981+0000[0m] {[34mscheduler_job_runner.py:[0m476} INFO[0m - DAG one_task_dag has 0/16 running and queued tasks[0m
+[[34m2025-11-17T04:18:27.981+0000[0m] {[34mscheduler_job_runner.py:[0m587} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: one_task_dag.one_task manual__2025-11-17T04:18:26.367964+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:18:27.982+0000[0m] {[34mscheduler_job_runner.py:[0m625} INFO[0m - Sending TaskInstanceKey(dag_id='one_task_dag', task_id='one_task', run_id='manual__2025-11-17T04:18:26.367964+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-11-17T04:18:27.982+0000[0m] {[34mbase_executor.py:[0m147} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'one_task_dag', 'one_task', 'manual__2025-11-17T04:18:26.367964+00:00', '--local', '--subdir', 'DAGS_FOLDER/one_task_dag.py'][0m
+[[34m2025-11-17T04:18:27.986+0000[0m] {[34msequential_executor.py:[0m74} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'one_task_dag', 'one_task', 'manual__2025-11-17T04:18:26.367964+00:00', '--local', '--subdir', 'DAGS_FOLDER/one_task_dag.py'][0m
+[[34m2025-11-17T04:18:28.818+0000[0m] {[34mdagbag.py:[0m541} INFO[0m - Filling up the DagBag from /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/one_task_dag.py[0m
+[[34m2025-11-17T04:18:28.923+0000[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:18:28.942+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-11-17T04:18:28.943+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:18:29.449+0000[0m] {[34mworkday.py:[0m36} WARNING[0m - Could not import pandas. Holidays will not be considered.[0m
+[[34m2025-11-17T04:18:29.480+0000[0m] {[34mtask_command.py:[0m410} INFO[0m - Running <TaskInstance: one_task_dag.one_task manual__2025-11-17T04:18:26.367964+00:00 [queued]> on host codespaces-98edc8[0m
+[[34m2025-11-17T04:18:29.929+0000[0m] {[34mscheduler_job_runner.py:[0m677} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='one_task_dag', task_id='one_task', run_id='manual__2025-11-17T04:18:26.367964+00:00', try_number=1, map_index=-1)[0m
+[[34m2025-11-17T04:18:29.932+0000[0m] {[34mscheduler_job_runner.py:[0m713} INFO[0m - TaskInstance Finished: dag_id=one_task_dag, task_id=one_task, run_id=manual__2025-11-17T04:18:26.367964+00:00, map_index=-1, run_start_date=2025-11-17 04:18:29.521793+00:00, run_end_date=2025-11-17 04:18:29.620945+00:00, run_duration=0.099152, state=failed, executor_state=success, try_number=1, max_tries=0, job_id=8, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-11-17 04:18:27.981972+00:00, queued_by_job_id=1, pid=30592[0m
+[[34m2025-11-17T04:18:30.068+0000[0m] {[34mdagrun.py:[0m609} ERROR[0m - Marking run <DagRun one_task_dag @ 2025-11-17 04:18:26.367964+00:00: manual__2025-11-17T04:18:26.367964+00:00, state:running, queued_at: 2025-11-17 04:18:26.388284+00:00. externally triggered: True> failed[0m
+[[34m2025-11-17T04:18:30.068+0000[0m] {[34mdagrun.py:[0m681} INFO[0m - DagRun Finished: dag_id=one_task_dag, execution_date=2025-11-17 04:18:26.367964+00:00, run_id=manual__2025-11-17T04:18:26.367964+00:00, run_start_date=2025-11-17 04:18:27.964959+00:00, run_end_date=2025-11-17 04:18:30.068695+00:00, run_duration=2.103736, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-11-17 04:18:26.367964+00:00, data_interval_end=2025-11-17 04:18:26.367964+00:00, dag_hash=748d72299fcbc8ed121d2c43ea36967d[0m
+[[34m2025-11-17T04:18:56.780+0000[0m] {[34mscheduler_job_runner.py:[0m411} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: one_task_dag.one_task manual__2025-11-17T04:18:55.499763+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:18:56.780+0000[0m] {[34mscheduler_job_runner.py:[0m476} INFO[0m - DAG one_task_dag has 0/16 running and queued tasks[0m
+[[34m2025-11-17T04:18:56.781+0000[0m] {[34mscheduler_job_runner.py:[0m587} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: one_task_dag.one_task manual__2025-11-17T04:18:55.499763+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:18:56.782+0000[0m] {[34mscheduler_job_runner.py:[0m625} INFO[0m - Sending TaskInstanceKey(dag_id='one_task_dag', task_id='one_task', run_id='manual__2025-11-17T04:18:55.499763+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-11-17T04:18:56.782+0000[0m] {[34mbase_executor.py:[0m147} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'one_task_dag', 'one_task', 'manual__2025-11-17T04:18:55.499763+00:00', '--local', '--subdir', 'DAGS_FOLDER/one_task_dag.py'][0m
+[[34m2025-11-17T04:18:56.785+0000[0m] {[34msequential_executor.py:[0m74} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'one_task_dag', 'one_task', 'manual__2025-11-17T04:18:55.499763+00:00', '--local', '--subdir', 'DAGS_FOLDER/one_task_dag.py'][0m
+[[34m2025-11-17T04:18:57.550+0000[0m] {[34mdagbag.py:[0m541} INFO[0m - Filling up the DagBag from /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/one_task_dag.py[0m
+[[34m2025-11-17T04:18:57.635+0000[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:18:57.653+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-11-17T04:18:57.653+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:18:58.132+0000[0m] {[34mworkday.py:[0m36} WARNING[0m - Could not import pandas. Holidays will not be considered.[0m
+[[34m2025-11-17T04:18:58.150+0000[0m] {[34mtask_command.py:[0m410} INFO[0m - Running <TaskInstance: one_task_dag.one_task manual__2025-11-17T04:18:55.499763+00:00 [queued]> on host codespaces-98edc8[0m
+[[34m2025-11-17T04:18:58.507+0000[0m] {[34mscheduler_job_runner.py:[0m677} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='one_task_dag', task_id='one_task', run_id='manual__2025-11-17T04:18:55.499763+00:00', try_number=1, map_index=-1)[0m
+[[34m2025-11-17T04:18:58.511+0000[0m] {[34mscheduler_job_runner.py:[0m713} INFO[0m - TaskInstance Finished: dag_id=one_task_dag, task_id=one_task, run_id=manual__2025-11-17T04:18:55.499763+00:00, map_index=-1, run_start_date=2025-11-17 04:18:58.180350+00:00, run_end_date=2025-11-17 04:18:58.268963+00:00, run_duration=0.088613, state=failed, executor_state=success, try_number=1, max_tries=0, job_id=9, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-11-17 04:18:56.781533+00:00, queued_by_job_id=1, pid=30843[0m
+[[34m2025-11-17T04:18:58.641+0000[0m] {[34mdagrun.py:[0m609} ERROR[0m - Marking run <DagRun one_task_dag @ 2025-11-17 04:18:55.499763+00:00: manual__2025-11-17T04:18:55.499763+00:00, state:running, queued_at: 2025-11-17 04:18:55.522350+00:00. externally triggered: True> failed[0m
+[[34m2025-11-17T04:18:58.642+0000[0m] {[34mdagrun.py:[0m681} INFO[0m - DagRun Finished: dag_id=one_task_dag, execution_date=2025-11-17 04:18:55.499763+00:00, run_id=manual__2025-11-17T04:18:55.499763+00:00, run_start_date=2025-11-17 04:18:56.765344+00:00, run_end_date=2025-11-17 04:18:58.642109+00:00, run_duration=1.876765, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-11-17 04:18:55.499763+00:00, data_interval_end=2025-11-17 04:18:55.499763+00:00, dag_hash=748d72299fcbc8ed121d2c43ea36967d[0m
+[[34m2025-11-17T04:20:40.880+0000[0m] {[34mscheduler_job_runner.py:[0m411} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: one_task_dag.one_task manual__2025-11-17T04:20:39.441956+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:20:40.880+0000[0m] {[34mscheduler_job_runner.py:[0m476} INFO[0m - DAG one_task_dag has 0/16 running and queued tasks[0m
+[[34m2025-11-17T04:20:40.880+0000[0m] {[34mscheduler_job_runner.py:[0m587} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: one_task_dag.one_task manual__2025-11-17T04:20:39.441956+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:20:40.881+0000[0m] {[34mscheduler_job_runner.py:[0m625} INFO[0m - Sending TaskInstanceKey(dag_id='one_task_dag', task_id='one_task', run_id='manual__2025-11-17T04:20:39.441956+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-11-17T04:20:40.882+0000[0m] {[34mbase_executor.py:[0m147} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'one_task_dag', 'one_task', 'manual__2025-11-17T04:20:39.441956+00:00', '--local', '--subdir', 'DAGS_FOLDER/one_task_dag.py'][0m
+[[34m2025-11-17T04:20:40.885+0000[0m] {[34msequential_executor.py:[0m74} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'one_task_dag', 'one_task', 'manual__2025-11-17T04:20:39.441956+00:00', '--local', '--subdir', 'DAGS_FOLDER/one_task_dag.py'][0m
+[[34m2025-11-17T04:20:41.664+0000[0m] {[34mdagbag.py:[0m541} INFO[0m - Filling up the DagBag from /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/one_task_dag.py[0m
+[[34m2025-11-17T04:20:41.747+0000[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:20:41.765+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-11-17T04:20:41.765+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:20:42.296+0000[0m] {[34mworkday.py:[0m36} WARNING[0m - Could not import pandas. Holidays will not be considered.[0m
+[[34m2025-11-17T04:20:42.315+0000[0m] {[34mtask_command.py:[0m410} INFO[0m - Running <TaskInstance: one_task_dag.one_task manual__2025-11-17T04:20:39.441956+00:00 [queued]> on host codespaces-98edc8[0m
+[[34m2025-11-17T04:20:42.744+0000[0m] {[34mscheduler_job_runner.py:[0m677} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='one_task_dag', task_id='one_task', run_id='manual__2025-11-17T04:20:39.441956+00:00', try_number=1, map_index=-1)[0m
+[[34m2025-11-17T04:20:42.747+0000[0m] {[34mscheduler_job_runner.py:[0m713} INFO[0m - TaskInstance Finished: dag_id=one_task_dag, task_id=one_task, run_id=manual__2025-11-17T04:20:39.441956+00:00, map_index=-1, run_start_date=2025-11-17 04:20:42.346961+00:00, run_end_date=2025-11-17 04:20:42.440233+00:00, run_duration=0.093272, state=failed, executor_state=success, try_number=1, max_tries=0, job_id=10, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-11-17 04:20:40.881009+00:00, queued_by_job_id=1, pid=31718[0m
+[[34m2025-11-17T04:20:42.880+0000[0m] {[34mdagrun.py:[0m609} ERROR[0m - Marking run <DagRun one_task_dag @ 2025-11-17 04:20:39.441956+00:00: manual__2025-11-17T04:20:39.441956+00:00, state:running, queued_at: 2025-11-17 04:20:39.454048+00:00. externally triggered: True> failed[0m
+[[34m2025-11-17T04:20:42.880+0000[0m] {[34mdagrun.py:[0m681} INFO[0m - DagRun Finished: dag_id=one_task_dag, execution_date=2025-11-17 04:20:39.441956+00:00, run_id=manual__2025-11-17T04:20:39.441956+00:00, run_start_date=2025-11-17 04:20:40.863727+00:00, run_end_date=2025-11-17 04:20:42.880710+00:00, run_duration=2.016983, state=failed, external_trigger=True, run_type=manual, data_interval_start=2025-11-17 04:20:39.441956+00:00, data_interval_end=2025-11-17 04:20:39.441956+00:00, dag_hash=2822ef70a50547c50267939b9120ca89[0m
+[[34m2025-11-17T04:22:32.062+0000[0m] {[34mscheduler_job_runner.py:[0m1553} INFO[0m - Resetting orphaned tasks for active dag runs[0m
+[[34m2025-11-17T04:25:20.297+0000[0m] {[34mscheduler_job_runner.py:[0m411} INFO[0m - 1 tasks up for execution:
+	<TaskInstance: one_task_dag.one_task manual__2025-11-17T04:25:19.536515+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:25:20.298+0000[0m] {[34mscheduler_job_runner.py:[0m476} INFO[0m - DAG one_task_dag has 0/16 running and queued tasks[0m
+[[34m2025-11-17T04:25:20.298+0000[0m] {[34mscheduler_job_runner.py:[0m587} INFO[0m - Setting the following tasks to queued state:
+	<TaskInstance: one_task_dag.one_task manual__2025-11-17T04:25:19.536515+00:00 [scheduled]>[0m
+[[34m2025-11-17T04:25:20.310+0000[0m] {[34mscheduler_job_runner.py:[0m625} INFO[0m - Sending TaskInstanceKey(dag_id='one_task_dag', task_id='one_task', run_id='manual__2025-11-17T04:25:19.536515+00:00', try_number=1, map_index=-1) to executor with priority 1 and queue default[0m
+[[34m2025-11-17T04:25:20.311+0000[0m] {[34mbase_executor.py:[0m147} INFO[0m - Adding to queue: ['airflow', 'tasks', 'run', 'one_task_dag', 'one_task', 'manual__2025-11-17T04:25:19.536515+00:00', '--local', '--subdir', 'DAGS_FOLDER/one_task_dag.py'][0m
+[[34m2025-11-17T04:25:20.315+0000[0m] {[34msequential_executor.py:[0m74} INFO[0m - Executing command: ['airflow', 'tasks', 'run', 'one_task_dag', 'one_task', 'manual__2025-11-17T04:25:19.536515+00:00', '--local', '--subdir', 'DAGS_FOLDER/one_task_dag.py'][0m
+[[34m2025-11-17T04:25:21.077+0000[0m] {[34mdagbag.py:[0m541} INFO[0m - Filling up the DagBag from /workspaces/hands-on-introduction-data-engineering-4395021/airflow/dags/one_task_dag.py[0m
+[[34m2025-11-17T04:25:21.157+0000[0m] {[34mexample_kubernetes_executor.py:[0m41} WARNING[0m - The example_kubernetes_executor example DAG requires the kubernetes provider. Please install it with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:25:21.175+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m39} WARNING[0m - Could not import DAGs in example_local_kubernetes_executor.py[0m
+Traceback (most recent call last):
+  File "/home/vscode/.local/lib/python3.10/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 37, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[[34m2025-11-17T04:25:21.175+0000[0m] {[34mexample_local_kubernetes_executor.py:[0m40} WARNING[0m - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes][0m
+[[34m2025-11-17T04:25:21.762+0000[0m] {[34mworkday.py:[0m36} WARNING[0m - Could not import pandas. Holidays will not be considered.[0m
+[[34m2025-11-17T04:25:21.779+0000[0m] {[34mtask_command.py:[0m410} INFO[0m - Running <TaskInstance: one_task_dag.one_task manual__2025-11-17T04:25:19.536515+00:00 [queued]> on host codespaces-98edc8[0m
+[[34m2025-11-17T04:25:22.283+0000[0m] {[34mscheduler_job_runner.py:[0m677} INFO[0m - Received executor event with state success for task instance TaskInstanceKey(dag_id='one_task_dag', task_id='one_task', run_id='manual__2025-11-17T04:25:19.536515+00:00', try_number=1, map_index=-1)[0m
+[[34m2025-11-17T04:25:22.286+0000[0m] {[34mscheduler_job_runner.py:[0m713} INFO[0m - TaskInstance Finished: dag_id=one_task_dag, task_id=one_task, run_id=manual__2025-11-17T04:25:19.536515+00:00, map_index=-1, run_start_date=2025-11-17 04:25:21.807894+00:00, run_end_date=2025-11-17 04:25:21.899416+00:00, run_duration=0.091522, state=success, executor_state=success, try_number=1, max_tries=0, job_id=11, pool=default_pool, queue=default, priority_weight=1, operator=BashOperator, queued_dttm=2025-11-17 04:25:20.298789+00:00, queued_by_job_id=1, pid=33887[0m
+[[34m2025-11-17T04:25:22.421+0000[0m] {[34mdagrun.py:[0m630} INFO[0m - Marking run <DagRun one_task_dag @ 2025-11-17 04:25:19.536515+00:00: manual__2025-11-17T04:25:19.536515+00:00, state:running, queued_at: 2025-11-17 04:25:19.551292+00:00. externally triggered: True> successful[0m
+[[34m2025-11-17T04:25:22.422+0000[0m] {[34mdagrun.py:[0m681} INFO[0m - DagRun Finished: dag_id=one_task_dag, execution_date=2025-11-17 04:25:19.536515+00:00, run_id=manual__2025-11-17T04:25:19.536515+00:00, run_start_date=2025-11-17 04:25:20.262826+00:00, run_end_date=2025-11-17 04:25:22.422176+00:00, run_duration=2.15935, state=success, external_trigger=True, run_type=manual, data_interval_start=2025-11-17 04:25:19.536515+00:00, data_interval_end=2025-11-17 04:25:19.536515+00:00, dag_hash=dbed71d8e3d976c9b354f7d19c0e8e55[0m
